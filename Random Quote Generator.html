@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, rgb(31, 30, 29), rgb(23, 21, 26));
+        }
+
+        #btn {
+            padding: 0px;
+            margin: 0px;
+            word-spacing: 3px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            font-size: 1.2rem;
+            border: 1px solid black;
+            text-align: center;
+            cursor: pointer;
+            height: 40px;
+            width: 280px;
+            border: 1px solid white;
+            font-family:sans-serif;
+
+        }
+
+        #quotes {
+            font-family: sans-serif;
+            word-spacing: 3px;
+            font-size: 1.3rem;
+            color: white;
+            width: 570px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: black;
+            border: 1px solid white;
+            padding: 50px 50px;
+            letter-spacing: 1px;
+
+        }
+
+        div {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <button id="btn" onclick="randoms()">Click To See Random Quotes</button>
+    </div>
+    <div>
+        <p id="quotes"></p>
+    </div>
+    <script>
+        document.getElementById('btn')
+
+
+        const quote = ["'Every day i spent here i've wondered, how did all these people let it come to this mind and body ruined dreams of freedom erased personalities burned away, No one would want to go to war if the knew what it would do to them, But it's not like we all leapt into that hell knowingly. Most of us were pushed some of us were pushed by other people and some of us pushed by the enivorments we grew up in. So the few who do choose to leap into hell see it differntly than the rest. And they're also able to see something beyond the hell maybe that something is hope or maybe it's just another hell only the people who keep moving forward can know for sure.\n-Eren Yeager'",
+            "'Our greatest enemy is our own fear.'",
+            "'Listen, Everywhere you look in this world wherever there's a light there's always be shadow's to be find as well.\n -Madara Uchiha'",
+            "'A time comes when we make friends in this world and a time comes when we go against the peoples that we call friends.'",
+            "'One person broke by peoples because of false hope and one broke by the material things that they want in life, both of them broke by something they want.'",
+            "'Never invest in someone based on how much you like them, Invest in someone based on how much they invest in you.'",
+            "'People can only meet you as deep as they meet their own self.'",
+            "'What comes with the bad goes with the good and so on.'",
+            "'Some absord pain in order to give love, Some absorb love in order to feel pain.'",
+            "'The life you want to make is the life that is already waithing for your actions.'",
+            "'The only thing which hold you back from your dreams is yourself.'",
+            "'What I hear, I forget. What I see, I remember. What I do, I understand's.\n -Confucius",
+            "'There are two types of slavery in this world: One to live for other needs, Second is to live for your body needs.'",
+            "'God help those people who help themselves'",
+            "'There's no present or future without a past'",
+            "'There is always calmness before the storm and after the storm'",
+            "'If you lose someone and find yourself, You won.'",
+            "'The stronger you get with yourself, The less people relate to you.'",
+            "'Thoughts, Feelings and physical sensations are just indicator. It's not who we are, We are awareness.'",
+            "''Insanity is doing the same thing and expecting a new result",
+            "'If things didn't workout in the past what makes you fell like it will work out now.'",
+            "'Never try to live a life of expectations, Be assertive.'",
+            "'If the root is holy so are the branches'",
+            "'When we tell the secrets we become free.'",
+            "'Knowing yourself is the root of all wisdom.'",
+            "'Anything you can't control is teaching you how to let go.'",
+            "'The arrow left the bow will never return'",
+            "'Biggest accomplishments comes from the hardest lessons.'",
+            "'if you can't sacrifice you never be succeeded.'",
+            "'The things that is not working out for you, Is actually working out for you.'"];
+
+        function randoms() {
+            let randomQuotes = Math.floor(Math.random() * quote.length)
+            document.getElementById('quotes').innerHTML = quote[randomQuotes]
+        };
+        // btn.addEventListener('click',)
+
+
+
+
+
+    </script>
+</body>
+
+</html>
