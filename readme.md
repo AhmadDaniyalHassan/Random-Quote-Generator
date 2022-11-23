@@ -1,3 +1,5 @@
 # Random Quote Generator
 
-## Small Application for a practice purpose of JS.
+## Small Application for practice purpose of JS.
+
+[](img/SS.png)
